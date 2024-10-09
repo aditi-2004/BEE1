@@ -1,0 +1,49 @@
+/* .candidate-dashboard {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .candidate-dashboard h1 {
+    color: #333;
+  }
+  
+  .candidate-dashboard .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .candidate-dashboard input,
+  .candidate-dashboard textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .candidate-dashboard .button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .candidate-dashboard .button:hover {
+    background-color: #218838;
+  }
+   */
+
+
+   /* Styles for Candidate Dashboard */
+form {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input, button {
+  width: 100%;
+  margin: 10px 0;
+}
