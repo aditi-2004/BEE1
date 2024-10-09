@@ -10,6 +10,16 @@
 // module.exports = router;
 
 
+// const express = require('express');
+// const router = express.Router();
+// const { getAdminDashboardData } = require('../controllers/adminController');
+
+// router.get('/dashboard', getAdminDashboardData);
+// module.exports = router;
+
+
+
+// src/routes/adminRoutes.js
 const express = require('express');
 const router = express.Router();
 const { getAdminDashboardData } = require('../controllers/adminController');

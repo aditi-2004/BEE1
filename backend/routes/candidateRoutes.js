@@ -44,18 +44,87 @@
 
 
 // src/routes/candidateRoutes.js
+
+
+
+
+// const express = require('express');
+// const router = express.Router();
+// const candidateController = require('../controllers/candidateController');
+// const { candidateAuth } = require('../middleware/authMiddleware');
+
+// // Route to get all candidates (protected by candidateAuth middleware)
+// router.get('/', candidateAuth, candidateController.getCandidates);
+
+// // Route to add a new candidate (protected by candidateAuth middleware)
+// router.post('/', candidateAuth, candidateController.addCandidate);
+
+// // Route to delete a candidate by ID (protected by candidateAuth middleware)
+// router.delete('/:id', candidateAuth, candidateController.deleteCandidate);
+
+// module.exports = router; // Export the router for use in the main app
+
+
+
+// const express = require('express');
+// const router = express.Router();
+// const candidateController = require('../controllers/candidateController');
+// const { candidateAuth } = require('../middleware/authMiddleware');
+
+// // Route to get all candidates (protected by candidateAuth middleware)
+// router.get('/', candidateAuth, candidateController.getCandidates);
+
+// // Route to add a new candidate (protected by candidateAuth middleware)
+// router.post('/', candidateAuth, candidateController.addCandidate);
+
+// // Route to delete a candidate by ID (protected by candidateAuth middleware)
+// router.delete('/:id', candidateAuth, candidateController.deleteCandidate);
+// module.exports = router;
+
+
+
+
+
+// src/routes/candidateRoutes.js
+
+
+
+
+
+// const express = require('express');
+// const router = express.Router();
+// const candidateController = require('../controllers/candidateController');
+// const { candidateAuth } = require('../middleware/authMiddleware');
+
+// router.get('/', candidateAuth, candidateController.getCandidates);
+// router.post('/', candidateAuth, candidateController.addCandidate);
+// router.delete('/:id', candidateAuth, candidateController.deleteCandidate);
+
+// module.exports = router;
+
+
+
+
+
 const express = require('express');
 const router = express.Router();
 const candidateController = require('../controllers/candidateController');
 const { candidateAuth } = require('../middleware/authMiddleware');
 
-// Route to get all candidates (protected by candidateAuth middleware)
+// Get all candidates
 router.get('/', candidateAuth, candidateController.getCandidates);
 
-// Route to add a new candidate (protected by candidateAuth middleware)
+// Get a specific candidate by ID
+router.get('/:id', candidateAuth, candidateController.getCandidateById);
+
+// Add a new candidate
 router.post('/', candidateAuth, candidateController.addCandidate);
 
-// Route to delete a candidate by ID (protected by candidateAuth middleware)
+// Update a candidate by ID
+router.put('/:id', candidateAuth, candidateController.updateCandidate);
+
+// Delete a candidate by ID
 router.delete('/:id', candidateAuth, candidateController.deleteCandidate);
 
-module.exports = router; // Export the router for use in the main app
+module.exports = router;
+
