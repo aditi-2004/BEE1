@@ -1,0 +1,74 @@
+/* .admin-dashboard {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .admin-dashboard h1 {
+    color: #333;
+  }
+  
+  .admin-dashboard .section {
+    margin-bottom: 20px;
+  }
+  
+  .admin-dashboard .button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .admin-dashboard .button:hover {
+    background-color: #0056b3;
+  }
+   */
+
+
+   /* AdminDashboard.css */
+
+.admin-dashboard {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.admin-dashboard h2 {
+  color: #333;
+}
+
+.admin-dashboard .section {
+  margin-bottom: 20px;
+}
+
+.chart-container {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.candidate-card, .voter-card {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.candidate-card h4, .voter-card h4 {
+  margin: 0;
+  color: #333;
+}
+
+.candidate-card p, .voter-card p {
+  margin: 5px 0;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
